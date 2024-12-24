@@ -12,7 +12,7 @@ X = []
 y = []
 
 # Processing first class
-for file in glob.glob('/Users/ziyadkhalid/Desktop/covid/COVID-19_Radiography_Dataset/Normal/images/*.png'):
+for file in glob.glob('/Users/unknown/Desktop/covid/COVID-19_Radiography_Dataset/Normal/images/*.png'):
     images = cv2.imread(file, 0)
     Resize_image = cv2.resize(images, dsize=(256, 256), interpolation=cv2.INTER_CUBIC)
     Reshape_image = Resize_image.reshape(1, 256 * 256)
@@ -20,7 +20,7 @@ for file in glob.glob('/Users/ziyadkhalid/Desktop/covid/COVID-19_Radiography_Dat
     y.append(0)
 
 # Processing second class
-for file in glob.glob('/Users/ziyadkhalid/Desktop/covid/COVID-19_Radiography_Dataset/COVID/images/*.png'):
+for file in glob.glob('/Users/unknown/Desktop/covid/COVID-19_Radiography_Dataset/COVID/images/*.png'):
     images = cv2.imread(file, 0)
     Resize_image = cv2.resize(images, dsize=(256, 256), interpolation=cv2.INTER_CUBIC)
     Reshape_image = Resize_image.reshape(1, 256 * 256)
