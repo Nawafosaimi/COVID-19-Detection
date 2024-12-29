@@ -1,7 +1,6 @@
 import numpy as np
 import cv2
 import glob
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
